@@ -1,19 +1,17 @@
-import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import * as React from 'react';
+import { AppBar, Toolbar, Button } from '@mui/material';
 
-const NavigationBar = () => (
-  <Navbar bg="dark" variant="dark" expand="lg">
-    <Navbar.Brand as={Link} to="/">José Eduardo Díaz Morales</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
-        <Nav.Link as={Link} to="/about">Acerca de mí</Nav.Link>
-        <Nav.Link as={Link} to="/work">Mi Trabajo</Nav.Link>
-        <Nav.Link as={Link} to="/contact">Contacto</Nav.Link>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-);
+const NavigationBar = () => {
+    return (
+        <AppBar position="static">
+            <Toolbar>
+                <Button color="inherit">Inicio</Button>
+                <Button color="inherit">Acerca de</Button>
+                <Button color="inherit">Experiencia</Button>
+                <Button color="inherit">Contacto</Button>
+            </Toolbar>
+        </AppBar>
+    );
+}
 
 export default NavigationBar;

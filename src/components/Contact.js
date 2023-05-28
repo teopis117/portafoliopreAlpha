@@ -1,13 +1,17 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import * as React from 'react';
+import { Button, TextField, Typography } from '@mui/material';
 
-const Contact = () => (
-  <Container>
-    <h1>Contacto</h1>
-    <p>
-      Puedes proporcionar detalles de contacto aquí o un formulario para que las personas te envíen un mensaje.
-    </p>
-  </Container>
-);
+const Contact = () => {
+    return (
+        <div>
+            <Typography variant="h4" component="div">Contacto</Typography>
+            <form>
+                <TextField label="Nombre" />
+                <TextField label="Email" />
+                <Button variant="contained">Enviar</Button>
+            </form>
+        </div>
+    );
+}
 
 export default Contact;

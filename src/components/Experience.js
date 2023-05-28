@@ -1,30 +1,17 @@
-import React from 'react';
-import { Container, Card } from 'react-bootstrap';
+import * as React from 'react';
+import { Typography, List, ListItem } from '@mui/material';
 
 const Experience = () => {
-  return (
-    <Container className="mt-5">
-      <Card>
-        <Card.Body>
-          <Card.Title>Experiencia</Card.Title>
-          <Card.Text>
-            <strong>Empresa XYZ</strong>
-            <br/>
-            Ingeniero en Ciberseguridad - Fechas
-            <br/>
-            Descripción de tus responsabilidades y logros en este puesto.
-            <br/>
-            <br/>
-            <strong>Empresa ABC</strong>
-            <br/>
-            Ingeniero en Sistemas - Fechas
-            <br/>
-            Descripción de tus responsabilidades y logros en este puesto.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Container>
-  );
-};
+    return (
+        <div>
+            <Typography variant="h4" component="div">Experiencia</Typography>
+            <List>
+                <ListItem>Experiencia laboral 1</ListItem>
+                <ListItem>Experiencia laboral 2</ListItem>
+                <ListItem>Experiencia laboral 3</ListItem>
+            </List>
+        </div>
+    );
+}
 
 export default Experience;

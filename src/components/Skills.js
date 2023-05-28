@@ -1,21 +1,17 @@
-import React from 'react';
-import { Container, Card } from 'react-bootstrap';
+import * as React from 'react';
+import { Typography, List, ListItem } from '@mui/material';
 
-const About = () => {
-  return (
-    <Container className="mt-5">
-      <Card>
-        <Card.Body>
-          <Card.Title>Sobre mí</Card.Title>
-          <Card.Text>
-            Soy José Eduardo Díaz Morales, un apasionado por la tecnología y la ciberseguridad.
-            Me gradué en la ESCOM del IPN en México. 
-            Mi objetivo es aportar mis habilidades en ciberseguridad para crear soluciones seguras y eficientes.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    </Container>
-  );
-};
+const Skills = () => {
+    return (
+        <div>
+            <Typography variant="h4" component="div">Habilidades</Typography>
+            <List>
+                <ListItem>Habilidad 1</ListItem>
+                <ListItem>Habilidad 2</ListItem>
+                <ListItem>Habilidad 3</ListItem>
+            </List>
+        </div>
+    );
+}
 
-export default About;
+export default Skills;

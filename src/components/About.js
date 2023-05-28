@@ -1,13 +1,13 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import * as React from 'react';
+import { Typography } from '@mui/material';
 
-const About = () => (
-  <Container>
-    <h1>Acerca de mí</h1>
-    <p>
-      Aquí puedes incluir detalles sobre tu formación, tus logros, tus intereses, etc.
-    </p>
-  </Container>
-);
+const About = () => {
+    return (
+        <div>
+            <Typography variant="h4" component="div">Acerca de</Typography>
+            <Typography variant="body1" component="div">Aquí va la información sobre ti.</Typography>
+        </div>
+    );
+}
 
 export default About;
